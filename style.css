@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(120deg, #e0f7fa, #ffffff);
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.app-header {
+    color: #007bff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.app-icon {
+    color: #28a745;
+}
+
+/* Cards */
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Summary Cards */
+.summary-card .card-body {
+    padding: 2rem 1.5rem;
+}
+.balance-card { border: 2px solid #007bff; }
+.income-card { border: 2px solid #28a745; }
+.expense-card { border: 2px solid #dc3545; }
+
+/* Forms */
+.transaction-form .form-control-lg,
+.transaction-form .form-select-lg {
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+}
+.transaction-btn {
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.transaction-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Table */
+.transaction-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+.transaction-table td {
+    vertical-align: middle;
+}
+
+/* Chart Card */
+#expenseCategoryChart, #monthlyFlowChart {
+    max-height: 300px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .app-header {
+        font-size: 2rem;
+    }
+}
