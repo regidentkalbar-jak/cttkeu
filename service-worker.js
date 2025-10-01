@@ -6,7 +6,7 @@ const URLS = [
   '/style.css',
   '/script.js',
   '/manifest.json',
-  // tambahkan icon jika ada
+   
   '/icons/icon-192.png',
   '/icons/icon-512.png'
 ];
